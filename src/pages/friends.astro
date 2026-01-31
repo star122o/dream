@@ -22,24 +22,28 @@ const { items } = friendsData;
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
-      {items.map((friend) => (
-        friend.site ? (
-          <a
-            href={friend.site}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group p-5 bg-zinc-900 border border-zinc-800 rounded-2xl transition-all hover:border-zinc-500 hover:-translate-y-1 active:scale-95 flex items-center justify-between"
-          >
-            <span class="text-lg font-medium">{friend.name}</span>
-            <span class="text-xs opacity-0 group-hover:opacity-40 transition-opacity">visit</span>
-          </a>
-        ) : (
-          <div class="p-5 bg-zinc-900/50 border border-zinc-900 rounded-2xl flex items-center justify-between opacity-50 cursor-not-allowed">
-            <span class="text-lg font-medium">{friend.name}</span>
-            <span class="text-[10px] uppercase tracking-widest">no link</span>
-          </div>
+      {
+        items.map((friend) =>
+          friend.site ? (
+            <a
+              href={friend.site}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group p-5 bg-zinc-900 border border-zinc-800 rounded-2xl transition-all hover:border-zinc-500 hover:-translate-y-1 active:scale-95 flex items-center justify-between"
+            >
+              <span class="text-lg font-medium">{friend.name}</span>
+              <span class="text-xs opacity-0 group-hover:opacity-40 transition-opacity">
+                visit
+              </span>
+            </a>
+          ) : (
+            <div class="p-5 bg-zinc-900/50 border border-zinc-900 rounded-2xl flex items-center justify-between opacity-50 cursor-not-allowed">
+              <span class="text-lg font-medium">{friend.name}</span>
+              <span class="text-[10px] uppercase tracking-widest">no link</span>
+            </div>
+          )
         )
-      ))}
+      }
     </div>
 
     <div class="mt-16">
