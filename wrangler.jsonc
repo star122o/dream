@@ -1,6 +1,12 @@
 {
-    "name": "dream",
-    "compatibility_date": "2026-01-31",
-    "compatibility_flags": ["nodejs_compat"],
-    "pages_build_output_dir": "./dist"
+  "name": "dream",
+  "compatibility_date": "2026-01-31",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./dist/_worker.js/index.js", 
+  "assets": {
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true
+  }
 }
