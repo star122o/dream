@@ -7,6 +7,7 @@ import {
   Telegram,
   X
 } from 'simple-icons-astro';
+import { Send } from '@lucide/astro';
 
 const BIRTH_YEAR = 2010;
 const currentYear = new Date().getUTCFullYear();
@@ -25,6 +26,11 @@ const SOCIAL_LINKS = [
     name: 'Discord',
     url: 'https://discord.com/users/1245349618905255946',
     Icon: Discord
+  },
+  {
+    name: 'Mail',
+    url: 'mailto:star@kitties.email',
+    Icon: Send
   }
 ];
 ---
@@ -48,14 +54,14 @@ const SOCIAL_LINKS = [
       <img
         src="/img/wp.png"
         alt=""
-        class="h-full w-full object-cover filter blur-[5px] brightness-[0.85]"
+        class="h-full w-full object-cover filter blur-[2px] brightness-[0.85]"
       />
     </div>
 
     <main
-      class="flex flex-col md:flex-row justify-center items-center min-h-screen gap-10 px-8 py-20"
+      class="flex flex-col justify-center items-center min-h-screen px-8 py-20"
     >
-      <div class="shrink-0">
+      <div class="shrink-0 mb-6">
         <img
           src="/img/pfp.jpg"
           alt="profile picture"
@@ -63,24 +69,20 @@ const SOCIAL_LINKS = [
         />
       </div>
 
-      <div
-        class="max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
-      >
+      <div class="max-w-xl flex flex-col items-center text-center">
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">
           <span class="text-white/90">Stargaze</span>
         </h1>
 
-        <p class="text-sm text-white/40 mb-6 tracking-widest">
+        <p class="text-sm text-white/40 mb-8 tracking-widest">
           /stɑː ɡeɪz/ • {age} • they/them
         </p>
 
         <div class="space-y-4 text-gray-300 leading-relaxed font-light">
           <div
-            class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-md"
+            class="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 backdrop-blur-md"
           >
-            <ul
-              class="flex flex-row gap-5 list-none p-0 justify-center md:justify-start"
-            >
+            <ul class="flex flex-row gap-6 list-none p-0 justify-center">
               {
                 SOCIAL_LINKS.map(({ name, url, Icon }) => (
                   <li>
@@ -91,7 +93,7 @@ const SOCIAL_LINKS = [
                       aria-label={name}
                       class="text-white opacity-40 hover:opacity-100 transition-all duration-300 hover:scale-110 block"
                     >
-                      <Icon size="24" class="fill-current" />
+                      <Icon size="30" class="fill-current" />
                     </a>
                   </li>
                 ))
