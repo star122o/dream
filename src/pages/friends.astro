@@ -7,52 +7,76 @@ const { items } = friendsData;
 
 <html lang="en">
   <head>
-    <title>Friends List</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>friends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body
-    class="bg-black text-white font-['Comfortaa',sans-serif] flex flex-col items-center justify-center min-h-screen p-6"
+    class="bg-[#080808] text-white font-['Comfortaa',sans-serif] selection:bg-white/20"
   >
-    <div class="mb-12 text-center">
-      <h1 class="text-5xl font-bold tracking-tighter mb-2">friends</h1>
-      <p class="text-gray-400 opacity-60">cool people i know online</p>
+    <div class="fixed inset-0 -z-10 h-full w-full">
+      <img
+        src="/wp.png"
+        alt=""
+        class="h-full w-full object-cover filter blur-[5px] brightness-[0.85]"
+      />
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
-      {
-        items.map((friend) =>
-          friend.site ? (
-            <a
-              href={friend.site}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="group p-5 bg-zinc-900 border border-zinc-800 rounded-2xl transition-all hover:border-zinc-500 hover:-translate-y-1 active:scale-95 flex items-center justify-between"
-            >
-              <span class="text-lg font-medium">{friend.name}</span>
-              <span class="text-xs opacity-0 group-hover:opacity-40 transition-opacity">
-                visit
-              </span>
-            </a>
-          ) : (
-            <div class="p-5 bg-zinc-900/50 border border-zinc-900 rounded-2xl flex items-center justify-between opacity-50 cursor-not-allowed">
-              <span class="text-lg font-medium">{friend.name}</span>
-              <span class="text-[10px] uppercase tracking-widest">no link</span>
-            </div>
+    <main
+      class="flex flex-col items-center justify-center min-h-screen px-8 py-20"
+    >
+      <div class="mb-12 text-center">
+        <h1 class="text-5xl font-bold tracking-tighter text-white/90 mb-2">
+          friends
+        </h1>
+        <p class="text-sm text-white/40 tracking-widest">
+          cool people i know online
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
+        {
+          items.map((friend) =>
+            friend.site ? (
+              <a
+                href={friend.site}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md shadow-lg transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:-translate-y-1 hover:shadow-2xl active:scale-95 flex items-center justify-between"
+              >
+                <span class="text-lg font-medium text-white/80 group-hover:text-white transition-colors">
+                  {friend.name}
+                </span>
+                <span class="text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-40 transition-opacity">
+                  visit
+                </span>
+              </a>
+            ) : (
+              <div class="p-5 bg-white/2 border border-white/5 rounded-2xl backdrop-blur-sm shadow-sm flex items-center justify-between opacity-40 grayscale">
+                <span class="text-lg font-medium">{friend.name}</span>
+                <span class="text-[10px] uppercase tracking-widest">
+                  no link
+                </span>
+              </div>
+            )
           )
-        )
-      }
-    </div>
+        }
+      </div>
 
-    <div class="mt-16">
-      <a
-        href="/"
-        class="text-sm opacity-40 hover:opacity-100 transition-opacity"
-      >
-        return home
-      </a>
-    </div>
+      <div class="mt-16">
+        <a
+          href="/"
+          class="text-xs uppercase tracking-[0.2em] text-white/30 hover:text-white/80 transition-all duration-500"
+        >
+          [ return home ]
+        </a>
+      </div>
+    </main>
   </body>
 </html>
