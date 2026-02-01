@@ -14,5 +14,10 @@ export default defineConfig({
   }),
   vite: {
     plugins: [tailwindcss()]
+  },
+  redirects: {
+    '/dni': '/dni.txt',
+    '/info': '/info.txt',
+    '/about': '/info.txt'
   }
 });

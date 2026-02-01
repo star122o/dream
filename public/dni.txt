@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# DNI (Do Not Interact):
+# Last updated: 2026-02-01
+
+[!] Communication Principles:
+Before reaching out, please observe the following:
+- - No Hello: https://nohello.net/.
+- - Don't Ask To Ask: https://dontasktoask.com/.
+- - Try It and See: https://tryitands.ee/.
+
+- ---
+
+[CRITERIA]:
+Do not interact if you belong to or support any of the following:
+
+1. Discrimination & bigotry:
+   - Sexism: Misogyny, transmisogyny.
+   - Anti-LGBTQ+: Homophobia, transphobia, exclusionism, radical inclusionism.
+   - Terfs/FSRAs and transmed/truscum.
+   - Phobias: Aphobia, enbyphobia, panphobia, and bi-erasure.
+   - Racism: Anti-Black, anti-White, anti-Asian, colourism, xenophobia.
+   - Fascism: Nazism, the alt-right, MAGA/AFD, and imperialist/colonialist apologists.
+   - Religious intolerance: Antisemitism, Islamophobia.
+   - Casteism and fetishisation.
+
+2. Geopolitics:
+   - Pro-Zionist, pro-Israel, pro-IDF, anti-Palestine.
+
+3. Ableism:
+   - Use of slurs, anti-self-diagnosis, anti-recovery.
+   - Pro-endogenic.
+
+4. Political Alignment:
+   - Right-wing/conservative, anti-socialism.
+   - Pro-life/anti-choice.
+
+5. PRO-SHIP & HARMFUL CONTENT:
+   - Pro-ship (incest, pedophilia, conship, pro-fiction).
+   - Content involving abuse, rape, or self-harm.
+   - The fetishisation of minors; identifying as a MAP.
+-----BEGIN PGP SIGNATURE-----
+
+iJEEARYKADkWIQQtINYstBQP4wYgxjXtWahqeo+AtwUCaX8JoRsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMSwyLDEACgkQ7VmoanqPgLcHqgD+KC3YZQrxU3s2DsAnRhjD
+Dewi2ruFvAXuZ4irnD2p3BoBAL0J3OfJk7OqUeqYm41HCMFgl7zrW7mpdRHxjRIz
+PgwI
+=uCFL
+-----END PGP SIGNATURE-----

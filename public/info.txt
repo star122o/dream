@@ -1,0 +1,24 @@
+(The page is under construction and only text exists for now!)
+
+Hello, I'm Stargaze!
+
+Firstly, most of the text should be signed by me using my PGP key pair. You should be able to find the keys below:
+- Binary format: https://www.luckless.de/star.pgp
+- ASCII format: https://www.luckless.de/star.asc
+- Keyserver:
+  https://keyserver.ubuntu.com/pks/lookup?search=01FA302D6298F066B65048E5DB1290FE292E8894&fingerprint=on&op=index
+  https://keys.openpgp.org/vks/v1/by-fingerprint/01FA302D6298F066B65048E5DB1290FE292E8894
+
+Next, you should probably check out my DNI list.
+It can be found at https://www.luckless.de/dni.txt.
+
+If you don't fit in the listed criteria, feel free to message in my socials found at:
+https://www.luckless.de/
+
+Welp, thank you for reading this.
+
+---
+
+This page is hosted on Cloudflare Workers.
+Proudly made /w Bun, Astro & TailwindCSS <3
+Source code can be found at https://github.com/star122o/dream.git
