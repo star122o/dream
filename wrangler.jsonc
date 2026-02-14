@@ -1,17 +1,13 @@
 {
   "name": "dream",
+  "main": "./dist/_worker.js/index.js",
   "compatibility_date": "2026-02-14",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "pages_build_output_dir": "./dist", 
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
   "observability": {
     "enabled": true
-  },
-  "kv_namespaces": [
-    {
-      "binding": "SESSION",
-      "id": "placeholder_id"
-    }
-  ]
+  }
 }

@@ -16,7 +16,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier . --write",
-    "deploy": "bun run build && wrangler pages deploy dist",
+    "deploy": "bun run build && wrangler deploy",
     "lint": "eslint "
   },
   "type": "module",
